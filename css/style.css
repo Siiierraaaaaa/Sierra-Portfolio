@@ -1,0 +1,484 @@
+/* Color Palette:
+#DB9C85
+Background → #FEEBED
+Text → #543B37
+Buttons → #E73B68
+Hover Effects → #E56D84#*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEEBED;
+    color: #543B37;
+    margin: 0;
+    padding: 0;
+}
+                                                        /* NAV BAR, LOGO, AND FOOTER */
+.logo{
+display: flex;
+justify-content: left;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: #543B37;
+    color: #FEEBED;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a:hover {
+    background-color: #EAD0D6;
+}
+
+.navbar a {
+    color: #E56D84;
+    text-decoration: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #543B37;
+    color: #FEEBED;
+}
+
+footer a {
+    color: #E56D84;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+footer a:hover {
+    background-color: #EAD0D6;
+}
+.socials{
+    width:65px
+}
+
+/* HOMEPAGE */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+}
+
+.intro-section p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.welcome-post p,
+.welcome-post h5 {
+    margin: 10px 0;
+}
+/* CONTACT PANEL */
+.contact-panel {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    right: -400px;
+    transition: right 0.3s ease;
+    background: #DB9C85;
+    padding: 45px;
+    box-sizing: border-box;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.contact-panel.active {
+    right: 0;
+}
+/* PROJECT PAGE */
+.projects {
+    display: grid;
+    justify-items: center;
+    padding: 25px;
+    gap: 50px;
+}
+
+.projects-intro {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.projects-intro h3 {
+    margin-bottom: 15px;
+}
+
+.projects-intro p {
+    line-height: 1.6;
+}
+
+.project-card {
+    display: flex;
+    gap: 30px;
+    background-color: #EAD0D6;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 8px #FEEBED;
+    transform: translateY(4px);
+}
+
+.project-card img {
+    width: 350px;
+    height: 250px;
+    /* cover tells the browser I'm going to fill the entire box without stretching the image */
+    object-fit: cover;
+
+}
+
+.project-description {
+    flex: 1;
+}
+
+button {
+    border: 2px solid #E56D84;
+    border-radius: 16px;
+    background-color: #EAD0D6;
+    padding: 8px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+
+}
+
+button:hover {
+    background-color: #543B37;
+    color: #EAD0D6;
+    box-shadow: 0 8px 16px #E56D84;
+    transform: translateY(4px);
+}
+
+.project-links {
+    display: flex;
+    gap: 8px;
+}
+
+÷responsive design
+/* 
+   TABLET
+ */
+@media (max-width: 1024px) {
+
+    .project-card {
+        max-width: 90%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 900px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* 
+   MOBILE
+*/
+@media (max-width: 768px) {
+
+    body {
+        padding: 0;
+    }
+
+ 
+
+    .projects-intro {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .project-card {
+        flex-direction: column;
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-description h4 {
+        font-size: 1.5rem;
+    }
+
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-links button {
+        width: 100%;
+    }
+}
+
+
+
+/* Icons and illustrations */
+
+.hero-image {
+    width: 260px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.timeline-icon {
+    width: 65px;
+    height: auto;
+}
+
+.hobby-icon {
+    width: 30px;
+    height: auto;
+    background-color: #E56D84;
+    border-radius: 38%;
+}
+
+.sparkle {
+    width: 55px;
+    margin-left: 25px;
+}
+
+.heart-divider {
+    width: 280px;
+    margin-top: 10px;
+    padding: 0px;
+
+
+}
+
+.quote-icon {
+    width: 55px;
+}
+
+.flower-illustration {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 58px;
+
+
+}
+
+.flower-illustrations {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 58px;
+
+
+
+}
+/* About page */
+.about-header {
+    text-align: center;
+    margin: 40px auto 30px;
+    /* margin-top: 15px;
+    margin-bottom: -200px; */
+    position: relative;
+    padding: 20px 0px;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #543B37;
+}
+.layout-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    align-items: start;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.intro-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.card {
+    background: #FFF8F9;
+    border-radius: 20px;
+    padding: 45px;
+    box-shadow: 0 8px 20px rgba(84, 59, 55, .10);
+    position: relative;
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.icon-title h2 {
+    margin: 0;
+}
+
+.intro-card {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 15px 15px 8px 8px;
+}
+
+.intro-text {
+
+    flex: 1;
+    line-height: 1.8;
+
+}
+
+.intro-text p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+.journey-bio {
+    padding: 30px 0;
+    border-bottom: 1px solid #F5D6DC;
+}
+
+.journey-bio:last-child {
+    border-bottom: none;
+}
+
+.journey-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.skills-card li {
+    background: #FCE3EA;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.skills-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.hobby p {
+    margin: 0;
+}
+
+.quote-card {
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 65px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 35px;
+}
+
+.quote-card p {
+    max-width: 700px;
+    margin: 12px auto;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 25px
+}
+
+.journey-bio {
+    position: relative;
+    padding: 30px 0 60px;
+    border-bottom: 1px solid #F5D6DC;
+}
+
+.journey-bio:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.journey-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.timeline-arrow {
+    position: absolute;
+    width: 35px;
+    left: 15px;
+    bottom: 20px;
+}
+
+.journey-content {
+    margin-left: 57px;
+}
+
+.journey-content p {
+    margin: 0;
+    line-height: 1.8;
+}
