@@ -109,7 +109,20 @@ footer a:hover {
 }
 
 /* PROJECT PAGE */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 2px solid #E56D84;
+    border-radius: 16px;
+    background-color: #EAD0D6;
+    color: #543B37;
+    text-decoration: none;
+}
 
+.btn:hover {
+    background-color: #543B37;
+    color: #EAD0D6;
+}
 .projects {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
