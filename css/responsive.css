@@ -1,0 +1,72 @@
+
+/* 
+   TABLET
+ */
+/* @media (max-width: 1024px) {
+
+    .project-card {
+        max-width: 90%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+} */
+
+/* @media (max-width: 900px) {
+    .layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-card {
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+
+/* 
+   MOBILE
+*/
+/* @media (max-width: 768px) {
+
+    body {
+        padding: 0;
+    }
+ .projects-intro {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .project-card {
+        flex-direction: column;
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-description h4 {
+        font-size: 1.5rem;
+    }
+
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-links button {
+        width: 100%;
+    }
+} */
