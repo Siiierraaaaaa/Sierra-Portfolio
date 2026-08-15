@@ -83,29 +83,514 @@ footer a:hover {
 }
 
 /* HOMEPAGE */
+/* HOMEPAGE */
+
+/* =========================
+   HOMEPAGE CARDS
+   ========================= */
+
+/* HERO CARD */
+
 .intro-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    gap: 30px;
+    gap: 40px;
+
+    margin: 30px 40px;
+    padding: 45px;
+
+    background-color: #fffaf9;
+    border: 1px solid #EAD0D6;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(84, 59, 55, 0.08);
 }
 
 .intro-section p {
-    max-width: 500px;
+    max-width: 600px;
     line-height: 1.6;
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
+    object-fit: cover;
+}
+.intro-section a {
+    display: inline-block;
+
+    background-color: #FEEBED;
+    color: #E56D84;
+
+    border: 2px solid #E56D84;
+    border-radius: 20px;
+
+    padding: 8px 16px;
+
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.welcome-post p,
-.welcome-post h5 {
-    margin: 10px 0;
+.intro-section a:hover {
+    background-color: #EAD0D6;
 }
+
+/* =========================
+   FEATURED POST CARD
+   ========================= */
+.featured-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fffaf9;
+    border: 1px solid #EAD0D6;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(84, 59, 55, 0.08);
+}
+.featured a {
+    display: inline-block;
+
+    background-color: #FEEBED;
+    color: #E56D84;
+
+    border: 2px solid #E56D84;
+    border-radius: 20px;
+
+    padding: 8px 16px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.featured a:hover {
+    background-color: #EAD0D6;
+}
+.featured-title {
+    grid-column: 1 / -1;
+}
+
+.featured-title h2 {
+    margin: 0;
+}
+.featured-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature-description {
+    align-self: center;
+}
+.featured {
+    margin: 30px 40px;
+}
+/* 
+
+
+
+
+/* =========================
+   ABOUT ME CARD
+   ========================= */
+
+.about-me {
+    margin: 30px 40px;
+    padding: 35px 40px;
+
+    background-color: #fffaf9;
+    border: 1px solid #EAD0D6;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(84, 59, 55, 0.08);
+}
+
+.about-me h2 {
+    margin-bottom: 15px;
+}
+
+.about-me p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-me .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about-me a {
+    display: inline-block;
+
+    background-color: #FEEBED;
+    color: #E56D84;
+
+    border: 2px solid #E56D84;
+    border-radius: 20px;
+
+    padding: 8px 16px;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about-me a:hover {
+    background-color: #EAD0D6;
+}
+/* =========================
+   LET'S BUILD SOMETHING
+   ========================= */
+
+.contact-me {
+    margin: 30px 40px;
+    padding: 35px 40px;
+
+    background-color: #fffaf9;
+    border: 1px solid #EAD0D6;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px rgba(84, 59, 55, 0.08);
+}
+
+.contact-me h2 {
+    margin-bottom: 15px;
+}
+
+.contact-me p {
+    margin-bottom: 20px;
+}
+
+.contact-me button {
+    background-color: #FEEBED;
+    color: #E56D84;
+
+    border: 2px solid #E56D84;
+    border-radius: 20px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+.contact-me button:hover {
+    background-color: #EAD0D6;
+}
+
+.contact-me button:hover {
+    background-color: #EAD0D6;
+}
+
+.contact-me button {
+    background-color: #FEEBED;
+    color: #E56D84;
+    border: 2px solid #E56D84;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-me button:hover {
+    background-color: #EAD0D6;
+}
+/* =========================================
+   HOMEPAGE ILLUSTRATIONS
+========================================= */
+
+.hero-illustration,
+.featured-illustration img,
+.about-illustrations img,
+.contact-illustrations img {
+    object-fit: contain;
+}
+
+
+
+
+/* HERO ILLUSTRATIONS
+=========================================  */
+
+.intro-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-illustrations {
+    position: absolute;
+
+    /* space between text and profile picture */
+    right: 475px;
+    /* left: 580px; */
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 180px;
+    height: 130px;
+
+    z-index: 1;
+}
+
+.hero-illustration {
+    position: absolute;
+    object-fit: contain;
+
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+
+/* First illustration */
+
+.hero-dev {
+    width: 170px;
+    left: 0;
+    bottom: 35px;
+}
+
+
+/* Second illustration */
+
+.hero-flowers {
+    width: 180px;
+    left: 105px;
+    bottom: 0;
+}
+
+
+/* Third illustration */
+
+.hero-books {
+    width: 175px;
+    left: 45px;
+    bottom: 4;
+}
+
+/* =========================================
+   FEATURED POST
+========================================= */
+
+.featured {
+    margin: 30px 40px;
+}
+
+.featured-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    padding: 30px;
+
+    background-color: #fffaf9;
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+/* Featured Post heading */
+
+.featured-title {
+    grid-column: 1 / -1;
+}
+
+.featured-title h2 {
+    margin: 0;
+}
+
+
+/* Featured project image */
+
+.featured-card > img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* Featured description */
+
+.feature-description {
+    align-self: center;
+    position: relative;
+    z-index: 2;
+}
+.featured-card {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+/* Small decorative flower */
+
+.featured-illustration {
+    position: absolute;
+
+    right: 180px;
+    bottom: 15px;
+
+    width: 100px;
+    height: 120px;
+
+    z-index: 1;
+}
+
+.featured-illustration img {
+    width: 450px;
+    height: 150px;
+    /* left: 10%; */
+}
+/* =========================================
+   ABOUT ME CARD
+========================================= */
+
+.about-me {
+    position: relative;
+
+    margin: 30px 40px;
+    padding: 35px;
+
+    background-color: #fffaf9;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    min-height: 190px;
+}
+
+/* .about-me > *:not(.about-illustrations) {
+    position: relative;
+    z-index: 2;
+} */
+.about-me {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-illustrations {
+    position: absolute;
+
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 250px;
+    height: 150px;
+
+    z-index: 1;
+}
+
+.about-illustrations img {
+    position: absolute;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+
+/* Desk */
+
+.about-desk {
+    width: 200px;
+
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Browser */
+
+.about-browser {
+    width: 200px;
+
+    left: 75px;
+    bottom: 5px;
+}
+
+
+/* Person */
+
+.about-me-img {
+    width: 200px;
+
+    left: 0;
+    bottom: 0;
+}
+
+.contact-me {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-illustrations {
+    position: absolute;
+
+    right: 200px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 230px;
+    height: 160px;
+    z-index: 1;
+}
+
+.contact-illustrations img {
+    position: absolute;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+
+/* Envelope */
+
+.contact-envelope {
+    width: 110px;
+
+    left: 0;
+    bottom: 5;
+}
+
+
+/* Speech bubble */
+
+.contact-speech {
+    width: 105px;
+
+    left: 75px;
+    top: 35px;
+}
+
+
+/* Plant */
+
+.contact-plant {
+    width: 95px;
+
+    right: 0;
+    bottom: 5;
+}
+
+
+
+
+
 
 /* CONTACT PANEL */
 .contact-panel {
