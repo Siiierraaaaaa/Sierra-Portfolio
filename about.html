@@ -10,12 +10,15 @@
 
 <body>
     <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Sierra Parker</a>
+        </div>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <button id="contactBtn">Contact Me</button>
     </nav>
-    <div id="contactPanel" class="contact-panel">
+     <div id="contactPanel" class="contact-panel">
         <button id="closePanel">&times;</button>
         <h3>Lets work together!!!</h3>
         <p>I'd love to bring your ideas to life.</p>
@@ -25,14 +28,33 @@
                 parkersierra28@gmail.com
             </a>
         </p>
-        <a href="https://linkedin.com/in/sierralparker" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Siiierraaaaaa" target="_blank">GitHub</a>
+        <a class="socials" href="https://linkedin.com/in/sierralparker" target="_blank">
+            LinkedIn
+            <img src="assets/page-illustration/linked-in.png" alt="">
+        </a>
+
+        <a class="socials" href="https://github.com/Siiierraaaaaa" target="_blank">
+            GitHub
+            <img src="assets/page-illustration/github.png" alt="">
+        </a>
 
         <p>Have a project in mind? Send me a message below or email me directly. I typically respond within 24–48 hours.
         </p>
+        <form class="contact-form" action="https://formspree.io/f/xqpzdqqo" method="POST">
+            <input type="hidden" name="_next" value="https://sierra-portfolio-puce.vercel.app/">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
 
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5"
+                required></textarea>
 
+            <button type="submit">Send Message</button>
+
+        </form>
     </div>
     <main>
         <section class="about-header">
