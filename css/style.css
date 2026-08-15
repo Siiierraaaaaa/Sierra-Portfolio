@@ -67,8 +67,19 @@ footer a:hover {
     background-color: #EAD0D6;
 }
 
+.socials img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
 .socials {
-    width: 65px
+    text-decoration: none;
+
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /* HOMEPAGE */
