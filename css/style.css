@@ -14,20 +14,27 @@ body {
 }
 
 /* NAV BAR, LOGO, AND FOOTER */
-.logo {
-    display: flex;
-    justify-content: left;
 
+.logo a {
+    color: #E56D84;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #543B37;
     color: #FEEBED;
-    gap: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
