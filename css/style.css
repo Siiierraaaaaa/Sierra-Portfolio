@@ -15,6 +15,7 @@ body {
 
 /* NAV BAR, LOGO, AND FOOTER */
 
+
 .logo a {
     color: #E56D84;
     font-size: 20px;
@@ -22,27 +23,34 @@ body {
     text-decoration: none;
 }
 
+
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+
+    padding: 12px 20px;
+
     background-color: #543B37;
     color: #FEEBED;
+
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+
 .navbar a:hover {
     background-color: #EAD0D6;
 }
+
 
 .navbar a {
     color: #E56D84;
@@ -50,9 +58,10 @@ body {
 }
 
 
+
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 12px 20px;
     background-color: #543B37;
     color: #FEEBED;
 }
@@ -60,7 +69,7 @@ footer {
 footer a {
     color: #E56D84;
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 5px 10px;
 }
 
 footer a:hover {
@@ -68,18 +77,30 @@ footer a:hover {
 }
 
 .socials img {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
+
 .socials {
     text-decoration: none;
-
 }
-.social-links{
+
+.social-links {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-credit {
+    font-size: 13px;
+    opacity: 0.8;
 }
 
 /* HOMEPAGE */
@@ -189,6 +210,43 @@ footer a:hover {
     margin: 30px 40px;
 }
 /* 
+/* =========================================
+   FEATURED POST TECHNOLOGIES
+   ========================================= */
+
+.featured-technologies {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+
+    margin: 20px 0 25px;
+    width: 100%;
+}
+
+.featured-technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 80px;
+    text-align: center;
+}
+
+.featured-technology span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.featured-technology img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+    display: block;
+}
 
 
 
@@ -992,20 +1050,33 @@ button:hover {
     margin-bottom: 15px;
 }
 
-.skills-card li {
-    background: #FCE3EA;
-    padding: 12px 18px;
-    border-radius: 30px;
-    text-align: center;
-    font-weight: bold;
-}
 
-.skills-card ul {
+.skills-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: grid;
-    gap: 12px;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background-color: #FEEBED;
+    border-radius: 30px;
+
+    padding: 12px 20px;
+    margin-bottom: 15px;
+}
+
+.skills-list img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.skills-list span {
+    font-weight: bold;
 }
 
 .hobby {

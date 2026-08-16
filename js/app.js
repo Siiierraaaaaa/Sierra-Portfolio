@@ -1,17 +1,33 @@
 const contactBtn = document.getElementById('contactBtn');
-contactBtn.addEventListener("click", openContact);
+const contactBtn2 = document.getElementById('contactBtn2');
+
+const contactPanel = document.getElementById('contactPanel');
+const closeBtn = document.getElementById('closePanel');
 
 
-const contactPanel = document.getElementById('contactPanel')
+if (contactBtn) {
+    contactBtn.addEventListener("click", openContact);
+}
 
-const closeBtn = document.getElementById('closePanel')
-closeBtn.addEventListener("click", closeContact)
+if (contactBtn2) {
+    contactBtn2.addEventListener("click", openContact);
+}
+
+if (closeBtn) {
+    closeBtn.addEventListener("click", closeContact);
+}
+
 
 function openContact() {
-    contactPanel.classList.add("active")
+    if (contactPanel) {
+        contactPanel.classList.add("active");
+    }
 }
+
 function closeContact() {
-    contactPanel.classList.remove("active")
+    if (contactPanel) {
+        contactPanel.classList.remove("active");
+    }
 }
 
 const projects = [
@@ -43,10 +59,6 @@ const projects = [
             {
                 name: 'WordPress',
                 icon: 'assets/icons/wp-icon.png'
-            },
-            {
-                name: 'Gutenberg',
-                icon: 'assets/icons/gutenberg.png'
             },
             {
                 name: 'HTML',
@@ -135,6 +147,9 @@ const projectItem = document.querySelector('.projects')
 
 
 function displayProjects() {
+    if (!projectItem) {
+        return; 
+    }
 
     projectItem.innerHTML = projects.map(project => {
 
