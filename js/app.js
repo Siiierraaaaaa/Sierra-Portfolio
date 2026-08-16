@@ -97,7 +97,7 @@ const projects = [
     },
     {
         projectName: 'Color Changing App',
-        projectImage: 'assets/Color-Changing-App.png',
+        projectImage: 'assets/color-changing.png',
         projectIcon: '',
         technologies: [
             {
