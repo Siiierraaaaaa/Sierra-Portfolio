@@ -48,8 +48,8 @@ const projects = [
             icon: 'assets/icons/JS-icon.png'
         }],
         projectDescription: 'A responsive food blog featuring recipes, restaurant reviews, and desserts, with a focus on clean design and user-friendly navigation.',
-        liveDemo: '',
-        github: ''
+        liveDemo: 'https://the-foodie-leonne-blog.vercel.app/',
+        github: 'https://github.com/Siiierraaaaaa/TheFoodieLeonneBlog'
     },
     {
         projectName: 'The Foodie Leonne | WordPress Food Blog',
@@ -71,7 +71,7 @@ const projects = [
         ],
         projectDescription: 'A WordPress version of my original food blog, customized with Gutenberg, HTML, and CSS. ',
         liveDemo: 'https://sierra-parker.webhostingforstudents.com/classes/2510/',
-        github: ''
+        github: 'https://sierra-parker.webhostingforstudents.com/classes/2510/'
     },
     {
         projectName: 'Brew Haven Coffee',
@@ -114,8 +114,8 @@ const projects = [
             }
         ],
         projectDescription: 'An interactive JavaScript application that allows users to change the background color with a button click. Built to practice JavaScript events, functions, DOM manipulation, and dynamic styling.',
-        liveDemo: '',
-        github: ''
+        liveDemo: 'https://color-changing-app-mauve.vercel.app/',
+        github: 'https://github.com/Siiierraaaaaa/Color-changing-app'
     },
     {
         projectName: 'Counter App',
@@ -136,8 +136,8 @@ const projects = [
             }
         ],
         projectDescription: 'An interactive JavaScript application that allows users to increase, decrease, and reset a counter  while demonstrating DOM manipulation, event handling, and responsive design.',
-        liveDemo: '',
-        github: ''
+        liveDemo: 'https://count-app-cyan-omega.vercel.app/',
+        github: 'https://github.com/Siiierraaaaaa/Count-App'
     },
 ]
 // declaring that projectItem is selecting html class projects
