@@ -45,7 +45,7 @@ const projects = [
         },
         {
             name: 'JavaScript',
-            icon: 'assets/icons/js-icon.png'
+            icon: 'assets/icons/JS-icon.png'
         }],
         projectDescription: 'A responsive food blog featuring recipes, restaurant reviews, and desserts, with a focus on clean design and user-friendly navigation.',
         liveDemo: '',
@@ -88,7 +88,7 @@ const projects = [
             },
             {
                 name: 'JavaScript',
-                icon: 'assets/icons/js-icon.png'
+                icon: 'assets/icons/JS-icon.png'
             }
         ],
         projectDescription: 'A responsive coffee shop website designed to create a warm, welcoming experience for customers. Features include a featured drinks section, customer testimonials, location map, interactive pop-ups, and a structured navigation system.',
@@ -110,7 +110,7 @@ const projects = [
             },
             {
                 name: 'JavaScript',
-                icon: 'assets/icons/js-icon.png'
+                icon: 'assets/icons/JS-icon.png'
             }
         ],
         projectDescription: 'An interactive JavaScript application that allows users to change the background color with a button click. Built to practice JavaScript events, functions, DOM manipulation, and dynamic styling.',
@@ -132,7 +132,7 @@ const projects = [
             },
             {
                 name: 'JavaScript',
-                icon: 'assets/icons/js-icon.png'
+                icon: 'assets/icons/JS-icon.png'
             }
         ],
         projectDescription: 'An interactive JavaScript application that allows users to increase, decrease, and reset a counter  while demonstrating DOM manipulation, event handling, and responsive design.',
