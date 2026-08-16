@@ -18,17 +18,18 @@ const projects = [
     {
         projectName: 'The Foodie Leonne Blog',
         projectImage: 'assets/TFL.png',
+        projectIcon: '',
         technologies: [{
             name: 'HTML',
-            icon: 'assets/icons/html.png'
+            icon: 'assets/icons/html-icon.png'
         },
         {
             name: 'CSS',
-            icon: 'assets/icons/css.png'
+            icon: 'assets/icons/css-icon.png'
         },
         {
             name: 'JavaScript',
-            icon: 'assets/icons/javascript.png'
+            icon: 'assets/icons/js-icon.png'
         }],
         projectDescription: 'A responsive food blog featuring recipes, restaurant reviews, and desserts, with a focus on clean design and user-friendly navigation.',
         liveDemo: '',
@@ -37,10 +38,11 @@ const projects = [
     {
         projectName: 'The Foodie Leonne | WordPress Food Blog',
         projectImage: 'assets/TFL-WordPress.png',
+        projectIcon: '',
         technologies: [
             {
                 name: 'WordPress',
-                icon: 'assets/icons/wp.png'
+                icon: 'assets/icons/wp-icon.png'
             },
             {
                 name: 'Gutenberg',
@@ -48,11 +50,11 @@ const projects = [
             },
             {
                 name: 'HTML',
-                icon: 'assets/icons/html.png'
+                icon: 'assets/icons/html-icon.png'
             },
             {
                 name: 'CSS',
-                icon: 'assets/icons/css.png'
+                icon: 'assets/icons/css-icon.png'
             }
         ],
         projectDescription: 'A WordPress version of my original food blog, customized with Gutenberg, HTML, and CSS. ',
@@ -62,18 +64,19 @@ const projects = [
     {
         projectName: 'Brew Haven Coffee',
         projectImage: 'assets/Brew-Haven-Coffee.png',
+        projectIcon: '',
         technologies: [
             {
                 name: 'HTML',
-                icon: 'assets/icons/html.png'
+                icon: 'assets/icons/html-icon.png'
             },
             {
                 name: 'CSS',
-                icon: 'assets/icons/css.png'
+                icon: 'assets/icons/css-icon.png'
             },
             {
                 name: 'JavaScript',
-                icon: 'assets/icons/javascript.png'
+                icon: 'assets/icons/js-icon.png'
             }
         ],
         projectDescription: 'A responsive coffee shop website designed to create a warm, welcoming experience for customers. Features include a featured drinks section, customer testimonials, location map, interactive pop-ups, and a structured navigation system.',
@@ -83,18 +86,19 @@ const projects = [
     {
         projectName: 'Color Changing App',
         projectImage: 'assets/Color-Changing-App.png',
+        projectIcon: '',
         technologies: [
             {
                 name: 'HTML',
-                icon: 'assets/icons/html.png'
+                icon: 'assets/icons/html-icon.png'
             },
             {
                 name: 'CSS',
-                icon: 'assets/icons/css.png'
+                icon: 'assets/icons/css-icon.png'
             },
             {
                 name: 'JavaScript',
-                icon: 'assets/icons/javascript.png'
+                icon: 'assets/icons/js-icon.png'
             }
         ],
         projectDescription: 'An interactive JavaScript application that allows users to change the background color with a button click. Built to practice JavaScript events, functions, DOM manipulation, and dynamic styling.',
@@ -104,18 +108,19 @@ const projects = [
     {
         projectName: 'Counter App',
         projectImage: 'assets/Count-App.png',
+        projectIcon: '',
         technologies: [
             {
                 name: 'HTML',
-                icon: 'assets/icons/html.png'
+                icon: 'assets/icons/html-icon.png'
             },
             {
                 name: 'CSS',
-                icon: 'assets/icons/css.png'
+                icon: 'assets/icons/css-icon.png'
             },
             {
                 name: 'JavaScript',
-                icon: 'assets/icons/javascript.png'
+                icon: 'assets/icons/js-icon.png'
             }
         ],
         projectDescription: 'An interactive JavaScript application that allows users to increase, decrease, and reset a counter  while demonstrating DOM manipulation, event handling, and responsive design.',
@@ -136,7 +141,7 @@ function displayProjects() {
         const technologiesHTML = project.technologies.map(technology => {
             return `
                 <div class="project-technology">
-                    <h5>${technology.name}</h5>
+                    <span>${technology.name}</span>
                     <img src="${technology.icon}" alt="${technology.name}">
                 </div>
             `;
