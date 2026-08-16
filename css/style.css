@@ -699,6 +699,11 @@ footer p {
     object-fit: contain;
 }
 
+.contact-panel a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
