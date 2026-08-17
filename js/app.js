@@ -75,7 +75,7 @@ const projects = [
         github: 'https://sierra-parker.webhostingforstudents.com/classes/2510/'
     },
     {
-        projectName: 'Brew Haven Coffee',
+        projectName: 'Brew Haven Coffee — Angular Café & Online Ordering Website',
         projectImage: 'assets/Brew-Haven-Coffee.png',
         projectIcon: '',
         technologies: [
@@ -88,13 +88,13 @@ const projects = [
                 icon: 'assets/icons/css-icon.png'
             },
             {
-                name: 'JavaScript',
-                icon: 'assets/icons/JS-icon.png'
+                name: 'Anuglar',
+                icon: 'assets/icons/angular-icon.png'
             }
         ],
-        projectDescription: 'A responsive coffee shop website designed to create a warm, welcoming experience for customers. Features include a featured drinks section, customer testimonials, location map, interactive pop-ups, and a structured navigation system.',
-        liveDemo: 'https://brew-haven-coffeee-jchd.vercel.app/',
-        github: 'https://github.com/Siiierraaaaaa/brew-haven-coffeee'
+        projectDescription: 'A responsive café website built with Angular featuring dynamic menu categories, an interactive shopping cart, checkout flow, order confirmation, responsive design, and reusable component-based architecture.',
+        liveDemo: 'https://brew-haven-mu-red.vercel.app/',
+        github: 'https://github.com/Siiierraaaaaa/Brew-Haven'
     },
     {
         projectName: 'Color Changing App',
