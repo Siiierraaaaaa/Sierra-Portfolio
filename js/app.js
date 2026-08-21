@@ -48,9 +48,9 @@ const projects = [
             icon: 'assets/icons/JS-icon.png'
         }],
         projectDescription: 'A responsive food blog featuring recipes, restaurant reviews, and desserts, with a focus on clean design and user-friendly navigation.',
-        liveDemo: '',
+        liveDemo: 'https://the-foodie-leonne-blog-eqpa-six.vercel.app/',
         github: 'https://github.com/Siiierraaaaaa/TheFoodieLeonneBlog'
-        // 'https://the-foodie-leonne-blog.vercel.app/',
+        
     },
     {
         projectName: 'The Foodie Leonne | WordPress Food Blog',
